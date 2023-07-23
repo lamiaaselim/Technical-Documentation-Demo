@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500&family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,200;0,300;1,200;1,400;1,600&family=Poppins:ital,wght@0,100;0,400;0,700;1,200;1,300;1,600&family=Righteous&display=swap');
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+mat-toolbar{
+  background-color: #473d94;
+  color: aliceblue;
+  font-size: larger;
+}
+mat-sidenav{
+  width: 15%;
+  background-color: #d5d1e8;
+  color: aliceblue;
+}
+span.mat-mdc-list-item-unscoped-content.mdc-list-item__primary-text{
+  color: aliceblue;
+}
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+h5.title {
+  margin-left: 10%;
+  margin-top: 15px;
+}
+.example-sidenav-container {
+  flex: 1;
+}
+.example-is-mobile .example-sidenav-container {
+  flex: 1 0 auto;
+}
+.firstcard{
+  background-color: #d5d1e8;
+}
+h1{
+  color: #473d94;
+  font-family: 'Changa', sans-serif;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Righteous', cursive;
+}
+.menu-item{
+  margin: 0 10px 0 10px;
+  // align-items: baseline;
+  .menu-button{
+    display: block;
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  .menu-button span{
+    margin-left: 15px;
+    color: #d5d1e8;
+  }
+  .menu-button:hover{
+    background-color: #473d94;
+    // color: #473d94;
+  }
+  .menu-button:focus{
+    background-color: #473d94;
+    // color: #473d94;
+  }
+}

@@ -1,0 +1,35 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches" >
+  <mat-toolbar class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+    <h5 class="title">Technical Documentation</h5>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-sidenav-container"
+      [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+        [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+        <mat-nav-list>
+          <a mat-list-item routerLink="" >Js Tutorials</a>
+        </mat-nav-list>
+      <mat-nav-list>
+        <!-- <mat-icon>house</mat-icon> -->
+        <a id="nav-item" mat-list-item routerLink="/intro">Introduction</a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <a mat-list-item routerLink="." >Variables</a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <a mat-list-item routerLink="." >Constants</a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <a mat-list-item routerLink="." >Data types</a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <a mat-list-item routerLink="." >Function</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-home></app-home>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
